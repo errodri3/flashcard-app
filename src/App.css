@@ -183,3 +183,130 @@ h1 {
   background-color: #444;
   transform: translateY(-2px);
 }
+
+/* Guess Section Styles */
+.guess-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.guess-input {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-family: Georgia, serif;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  width: 280px;
+  transition: border-color 0.2s ease;
+}
+
+.guess-input:focus {
+  border-color: #1a1a1a;
+}
+
+/* Submit Button Styles */
+.submit-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-family: Georgia, serif;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+/* Feedback Styles */
+.guess-input.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.guess-input.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+/* Feedback Text Styles */
+.feedback-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feedback-text.correct {
+  color: #28a745;
+}
+
+.feedback-text.incorrect {
+  color: #dc3545;
+}
+
+.nav-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Shuffle Button Styles */
+.shuffle-btn {
+  margin-bottom: 16px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-family: Georgia, serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.shuffle-btn:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Streak Row Styles */
+.streak-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+/* Master Button Styles */
+.master-btn {
+  margin-bottom: 16px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-family: Georgia, serif;
+  background-color: #fff;
+  color: #f0a500;
+  border: 2px solid #f0a500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.master-btn:hover {
+  background-color: #f0a500;
+  color: white;
+}
